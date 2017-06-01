@@ -18,6 +18,7 @@ pip3 install https://github.com/slimkrazy/python-google-places/zipball/master
 
 #### Run
 set up https server
+
 python3 app.py
 
 ## Finite State Machine
