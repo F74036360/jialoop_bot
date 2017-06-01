@@ -31,11 +31,11 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
 * user
 
-    * 打/start開始，本bot有三種功能
-    
-        1. 運動：提供用戶地點的天氣資訊（透過parse氣象局網站）給予建議在哪天進行室外運動較適合，並依照其位置透過google place api探索附近運動室內外場所，並且提供健身菜單給用戶作為參考
-	2. 成語接龍：跟博學多聞的五阿哥玩成語接龍，阿哥人很好，不會的話都會給提示，此部份用到教育部成語字典的opendata
-	3. 健康資訊：透過身高體重年齡計算tdee, 並且計算出每日所需的三大營養素含量，用戶在得知後可以輸入食物得到相關的營養資訊，此部份是透過fda的食品營養成份open data做為搜索base.
+	a. 運動：提供用戶地點的天氣資訊（透過parse氣象局網站）給予建議在哪天進行室外運動較適合，並依照其位置透過google place api探索附近運動室內外場所，並且提供健身菜單給用戶作為參考
+	
+	b. 成語接龍：跟博學多聞的五阿哥玩成語接龍，阿哥人很好，不會的話都會給提示，此部份用到教育部成語字典的opendata
+	
+	c. 健康資訊：透過身高體重年齡計算tdee, 並且計算出每日所需的三大營養素含量，用戶在得知後可以輸入食物得到相關的營養資訊，此部份是透過fda的食品營養成份open data做為搜索base.
 	
     ![fsm](./first.png)
 
@@ -70,15 +70,15 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 * 健康：
 	透過Mifflin-St. Jror教授得到用戶的tdee以及bmr，並且幫他立定每日營養素目標，用戶可以請bot透過fda 營養資訊資料庫查詢食物的營養成份，bot會計算結果後回傳給用戶還差距多才會到3大營養素的目標。
 	
-	1. 計算出tdee	
+	a. 計算出tdee	
 	
 	![fsm](./tdee.png)
 	
-	2. 開始查詢食物營養價值
+	b. 開始查詢食物營養價值
 	
 	![fsm](./food.png)
 	
-	3. 得知還需要多少營養素到達目標
+	c. 得知還需要多少營養素到達目標
 	
 	![fsm](./remain.png)
 	
