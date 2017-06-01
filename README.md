@@ -29,6 +29,8 @@ initial state`user`
 
 Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
 
+### 可以到 ([這裡]())看bot的流程圖
+
 * user
 
 	a. 運動：提供用戶地點的天氣資訊（透過parse氣象局網站）給予建議在哪天進行室外運動較適合，並依照其位置透過google place api探索附近運動室內外場所，並且提供健身菜單給用戶作為參考
