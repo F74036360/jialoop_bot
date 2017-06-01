@@ -29,7 +29,7 @@ initial state`user`
 
 Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
 
-### 可以到 ([這裡]())看bot的流程圖
+### 可以到 ([這裡](https://github.com/F74036360/jialoop_bot/blob/master/readme_pdf.pdf))看bot的流程圖
 
 * user
 
