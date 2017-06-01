@@ -43,17 +43,24 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
     
 	輸入性別和居住地後，parse 氣象局網站得知一週天氣預報，bot經由預報會看哪天比較不會下雨並給予建議
 	
+	
 	![fsm](./weather_info.png)
 	
 	![fsm](./recommand.png)
 	
+	
 	接下來可以輸入地址，bot透過python-google-places api 得知附近運動場所資訊
 	
+	
 	![fsm](./park_info.png)
+	
 
 	也可random的提供用戶健身菜單和影片
 	
+	
 	![fsm](./menu_info.png)
+	
+	
 
 * 成語接龍：
     
@@ -62,9 +69,12 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	另外，阿哥因為太善良了，所以出的題目都一定是至少有5組成語可以接下去的。
 	
 	此部份是抓教育部的成語辭典並轉成xml再處理。
+	
 	![fsm](./start_game.png)
 	
 	![fsm](./re.png)
+	
+	
 	
 
 * 健康：
