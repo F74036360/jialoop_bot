@@ -33,9 +33,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 
     * 打/start開始，本bot有三種功能
         1. 運動：提供用戶地點的天氣資訊（透過parse氣象局網站）給予建議在哪天進行室外運動較適合，並依照其位置透過google place api探索附近運動室內外場所，並且提供健身菜單給用戶作為參考
-	
 	2. 成語接龍：跟博學多聞的五阿哥玩成語接龍，阿哥人很好，不會的話都會給提示，此部份用到教育部成語字典的opendata
-	
 	3. 健康資訊：透過身高體重年齡計算tdee, 並且計算出每日所需的三大營養素含量，用戶在得知後可以輸入食物得到相關的營養資訊，此部份是透過fda的食品營養成份open data做為搜索base.
 	
     ![fsm](./first.png)
