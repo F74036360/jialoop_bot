@@ -700,7 +700,7 @@ class TocMachine(GraphMachine):
             if_wrong=['不要now了你！','跟我開玩笑？','我真的很同情你媽...','...你國文老師在哭了la','...左轉笨版謝謝']
             pic=['https://goo.gl/Ki5zwY','https://goo.gl/tL8S7l','https://goo.gl/jK0Jp8']
             n=random.randint(0,2)
-            update.message.reply_text(pic[n])
+            update.message.reply_photo(pic[n])
             n=random.randint(0,4)
             update.message.reply_text(if_wrong[n])
             self.wrongcnt+=1
