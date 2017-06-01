@@ -62,7 +62,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	另外，阿哥因為太善良了，所以出的題目都一定是至少有5組成語可以接下去的。
 	
 	此部份是抓教育部的成語辭典並轉成xml再處理。
-	![fsm](./start.png)
+	![fsm](./start_game.png)
 	
 	![fsm](./re.png)
 	
